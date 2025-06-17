@@ -1,1 +1,18 @@
+## 🚀 Steps to Execute the Playwright Test Project
 
+1. Download or Clone the Repository  
+   git clone https://github.com/mahesh918292/Playwright_Automation_Testing.git
+
+2. Navigate to the Project Directory  
+   cd Playwright_Automation_Testing
+
+3. Install the Dependencies  
+   npm install
+
+4. Run the Playwright Tests  
+   npx playwright test
+
+5. View the Test Report  
+   npx playwright show-report
+
+✅ Make sure you have Node.js installed before running these commands.
