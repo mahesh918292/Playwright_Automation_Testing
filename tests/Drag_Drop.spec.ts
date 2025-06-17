@@ -14,8 +14,8 @@ test('Testing Inputs', async ({ page }: { page: Page }): Promise<void> => {
 
   // Step 2: Select a value ("dd") from the multi-select dropdown of superheroes
   await test.step('Select "dd" from multi-select superheroes dropdown', async () => {
-        const drop=await page.locator('#droppable')
-                const drag=await page.locator('#draggable').first()
+        const drop=await page.locator('#droppable').first()
+                const drag=await page.locator('#draggable')
         await drag.dragTo(drop)
         await page.waitForTimeout(1000)                // Select the option with value="dd"
   });
