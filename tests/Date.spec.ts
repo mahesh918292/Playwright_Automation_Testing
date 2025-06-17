@@ -9,15 +9,13 @@ test('Testing Inputs', async ({ page }: { page: Page }): Promise<void> => {
 
   // Step 1: Navigate to the droppable demo page and wait for the page to fully load
   await test.step('Navigate to the page', async () => {
-    await page.goto('https://demoqa.com/droppable') // Go to the page with draggable and droppable elements
+    await page.goto('https://letcode.in/calendar') // Go to the page with draggable and droppable elements
   });
 
   // Step 2: Drag the draggable element and drop it onto the droppable area
   await test.step('Drag and Drop action', async () => {
-    const drop = await page.locator('#droppable').first()   // Locate the drop target element
-    const drag = await page.locator('#draggable')           // Locate the draggable source element
-    await drag.dragTo(drop)                                 // Perform drag-and-drop operation
-    await page.waitForTimeout(1000)                         // Wait 1 second to observe the result (optional)
+    await page.locator('#birthday').fill('2025-06-17') // fill the date
+    await page.waitForTimeout(1000)                // Wait 1 second to observe the result (optional)
   });
 
 });
