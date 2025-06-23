@@ -5,9 +5,9 @@ export default async function getConnection() {
   if (!connection) {
     connection = await mysql.createConnection({
       host: 'localhost',
-      user: 'root',
-      password: 'password',
-      database: 'mahesh',
+      user: 'your_user_name',
+      password: 'your_password',
+      database: 'your_database_name',
     });
     console.log('✅ MySQL connected');
   }
